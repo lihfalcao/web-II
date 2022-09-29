@@ -1,6 +1,3 @@
-# GitHub Pages
-
-<https://utfpr-gp.github.io/roubank/>
 
 # Checkist
 
