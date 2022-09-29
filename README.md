@@ -3,7 +3,7 @@
 
 Caixas de Diálogo
 
-- [x] prompt
+- [ ] prompt
 - [x] alert
 - [x] confirm
 
