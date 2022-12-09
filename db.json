@@ -1,0 +1,35 @@
+{
+    "patches": [
+      {  
+       "name": "Orlando",
+        "destinyId": [1,2,3,4],
+        "description": "Que tal conhecer o mundo Mágico dos Parques de Orlando? Aqui encontrará novas atrações sempre! Um lugar perfeito para curtir com a família e crianças (ou para vocês adultos que gostam da magia).",
+        "service": "Parte Aérea, Noites em Hotéis 4*,<br/> Traslados, Café da manhã diário, Entrada aos Parques, Passeios conforme mencionados.",
+        "days": 12,
+        "photo": "/assets/resources/images/disney.jpeg"
+      
+      },
+      {   
+        "name": "Europa",
+        "destinyId": [1,2,4],
+        "description": "",
+        "service":"",
+        "days": 19,
+        "photo": "/assets/resources/images/paris.jpg"
+      },
+      {   
+        "name": "New York",
+        "destinyId": [1,2],
+        "description": "As luzes da Times Square, o verde do Central Park, as luxuosas lojas da 5th Avenue, o grande acervo artístico dos melhores museus, os musicais da Broadway, a bela paisagem vista da Ponte do Brooklyn, entre tantos outros cenários maravilhosos que são encantadores e inesquecíveis. A ilha de Manhattan abriga as melhores atrações, lojas, museus, restaurantes e bares da cidade, sendo o grande centro das atenções dos turistas que visitam a Big Apple.",
+        "service":"",
+        "days": 6,
+        "photo": "/assets/resources/images/newyork.jpg"
+      }
+    ],
+    "from": [
+      { "id": 1, "name": "São Paulo" },
+      { "id": 2, "name": "Rio de Janeiro" },
+      { "id": 3, "name": "Curitiba" },
+      { "id": 4, "name": "Brasília" }
+    ]
+  }

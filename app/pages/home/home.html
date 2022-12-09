@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css">
   </head>
 
   <body style="overflow:hidden;">
     <!-- formulario -->
   <div class="row" style="margin-top:20em; margin-left: 20em;" >
     <div class="box row" >
-        <div><input style="width:13em; margin-top: 3em; margin-left: -2em" class="form-control" list="fromOptions" id="from">
+        <div><input style="width:13em; margin-top: 3em; margin-left: -2em" class="form-control" list="fromOptions" id="from" onkeypress="validateChar(event)">
         <datalist id="fromOptions">
           <option value="São Paulo">
           <option value="Rio de Janeiro">
@@ -25,16 +26,14 @@
         </datalist>
       <p style="margin-top: 8em; margin-left: -11em;">De onde vamos sair?</p></div>
       <a>
-        <i class="fa fa-refresh fa-2x fa-fw" style="margin-top:1.5em; margin-left:2em"  onclick="revertInput()"></i>
+        <i class="fa fa-refresh fa-2x fa-fw" style="margin-top:1.5em; margin-left:2em" onclick="revertInput()"></i>
       </a>
       
-      <div><input style="width:13em; margin-top: 3em; margin-left: 3em;" class="form-control" list="destinyOptions" id="destiny">
+      <div><input style="width:13em; margin-top: 3em; margin-left: 3em;" class="form-control" list="destinyOptions" id="destiny" onkeypress="validateChar(event)">
         <datalist id="destinyOptions">
-          <option value="San Francisco">
-          <option value="New York">
           <option value="Orlando">
-          <option value="Paris">
-          <option value="Londres">
+          <option value="Europa">
+          <option value="New York">
         </datalist>
       <p style="margin-top: 8em; margin-left: -11em;">Para onde vamos?</p></div>
     </div>
@@ -43,6 +42,7 @@
       <input style="width:15em; margin-top: 3.5em;" id="start_date" type="date" class="form-control" name="start_date">
       <input style="width:15em; margin-top: 3.5em; margin-left: 3em;" id="end_date" type="date" class="form-control" name="end_date">
     </div>
+      <a class="searchButton" data-confirm="Você tem certeza dos dados escolhidos?"><i class="fa fa-search fa-2x fa-fw"></i></a>
   </div>
    <!-- fim formulario -->
     
@@ -54,10 +54,8 @@
         <button class="button-image" id="btn-4"></button>
     </div>
     
-    
-
-    <div id="footer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    <script src="{PATH}/alertify.min.js"></script>
     <script src="home.js"></script>
   </body>
 </html>

@@ -56,3 +56,16 @@ div {
     background-color: white;
     box-shadow: 2px 2px 4px #000000;
   }
+
+  .searchButton{
+    height: 5em;
+    width: 5em;
+    background-color: #1CB3E6;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    padding-top:1.5em;
+    margin-right: 13em;
+    box-shadow: 2px 2px 4px #000000;
+    margin-top: 2em;
+  }

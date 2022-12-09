@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/assets/resources/styles/util.css">
+    <link rel="stylesheet" href="/assets/resources/styles/patch.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Bilbo Swash Caps' rel='stylesheet'>
+    <title> Pacotes </title>
+</head>
+<body onload="getData()">
+    <div id="menu">
+        <div id="submenu"></div>
+        <div class="container">
+            <div class="row" style="margin-top: 0.7em; text-align: center;">
+                <a href="http://127.0.0.1:5500/app/pages/home/home.html" 
+                    class="links" >Home</a>
+                <a href="http://127.0.0.1:5500/app/pages/patch/all.html" 
+                class="links" style="margin-left: 20em;">Pacotes</a>
+                <a href="http://127.0.0.1:5500/app/pages/who/who.html" 
+                class="links" style="margin-left: 20em;">Quem Somos</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <h1 id="title" style="font-size: 5em;">Pacotes Disponíveis</h1>
+        <section class="patches" style="margin-top:5em; margin-left: 30%;">
+            <article class='card'>
+                <img id='photo' class='photo' src="/assets/resources/images/disney.jpeg" alt="photo" />
+                <h2 id='name' class='name'>Nome</h2>
+                <h2 id='days' class='days'>Quantidade de Dias</h2>
+                <a id='about' href="http://127.0.0.1:5500/app/pages/patch/1.html" class='about' 
+                style="font-size:2em; color: #D9263F;">Saiba Mais</a>
+            </article>
+        </section>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    <script src="{PATH}/alertify.min.js"></script>
+    <script src="patch.js"></script>
+</body>
+
+</html>
